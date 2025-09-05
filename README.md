@@ -23,7 +23,7 @@ This repository contains my implementation of **C++ Module 00**, developed as pa
 ## Overview
 
 C++ is a general-purpose programming language created by **Bjarne Stroustrup** as an extension of C, also called *"C with Classes"*.  
-This module is your **starting point** for learning C++ and OOP principles. You will progressively discover key concepts such as:
+This module is a **starting point** for learning C++ and OOP principles designed to progressively discover key concepts such as:
 
 - Namespaces  
 - Classes and Objects  
@@ -182,13 +182,7 @@ Enter `ADD`, `SEARCH`, or `EXIT` at the prompt.
 ./account
 ```
 
-Runs the provided tests to verify your implementation.
-
-## Submission and Peer Evaluation
-
-- Submit your project through the designated Git repository.
-- Only the files within your Git repository will be evaluated during defense.
-- Double-check that all file names and structures match the subject requirements.
+Runs it to verify the implementation.
 
 ## Acknowledgments
 
