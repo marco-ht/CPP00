@@ -15,7 +15,6 @@ This repository contains my implementation of **C++ Module 00**, developed as pa
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Submission and Peer Evaluation](#submission-and-peer-evaluation)
 - [Acknowledgments](#acknowledgments)
 - [Disclaimer](#disclaimer)
 - [License](#license)
