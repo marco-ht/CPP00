@@ -6,12 +6,11 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 19:04:59 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/23 19:30:27 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/23 19:52:46 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <string>
 
 void    ft_upperstr(char *str)
 {
