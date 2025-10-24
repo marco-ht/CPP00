@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 20:02:36 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 03:29:14 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 22:29:52 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 #include "PhoneBook.hpp"
 #include "program.hpp"
 
-using std::string;
-
 int main(void)
 {
        PhoneBook pb;
        t_contact ct;
-       string str;
+       std::string str;
        
        std::cout << "=== My Awesome PhoneBook ===" << std::endl;
        while (1)

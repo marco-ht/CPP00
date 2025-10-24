@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 02:01:46 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 02:13:27 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 22:28:41 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 #include <string>
 #include "Contact.hpp"
 #include "program.hpp"
-
-using std::string;
 
 class PhoneBook
 {

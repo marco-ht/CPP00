@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 00:20:41 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 02:11:53 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 22:27:32 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,15 @@
 #include <string>
 #include "program.hpp"
 
-using std::string;
-
 class   Contact
 {
     private:
     int index;
-    string  first_name;
-    string  last_name;
-    string  nickname;
-    string  phone_number;
-    string  darkest_secret;
+    std::string  first_name;
+    std::string  last_name;
+    std::string  nickname;
+    std::string  phone_number;
+    std::string  darkest_secret;
 
     public:
     void    setContact(int index, t_contact ct);

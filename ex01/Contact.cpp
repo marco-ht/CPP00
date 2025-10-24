@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 00:20:37 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 04:18:47 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 22:27:00 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 #include <string>
 #include "Contact.hpp"
 #include "program.hpp"
-
-using std::string;
 
 void    Contact::setContact(int index, t_contact ct)
 {
