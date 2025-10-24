@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/24 02:01:46 by mpierant          #+#    #+#             */
+/*   Updated: 2025/10/24 02:01:55 by mpierant         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
 
@@ -12,7 +24,6 @@ class PhoneBook
     Contact contacts[8];
     int num_of_contacts;
     int j;
-    int added;
 
     public:
     PhoneBook();
