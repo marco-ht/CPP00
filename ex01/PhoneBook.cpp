@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 00:20:46 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 02:01:40 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 03:36:28 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <string>
 #include "Contact.hpp"
 #include "PhoneBook.hpp"
+#include "program.hpp"
 
 using std::string;
 
@@ -23,11 +24,11 @@ PhoneBook::PhoneBook()
     j = 0;
 };
 
-void    PhoneBook::add_contact(string first_name, string last_name, string nickname, string phone_number, string darkest_secret)
+void    PhoneBook::add_contact(t_contact ct)
 {
     if (j == 8)
         j = 0;
-    contacts[j].setContact(j, first_name, last_name, nickname, phone_number, darkest_secret);
+    contacts[j].setContact(j, ct);
     j++;
     if (num_of_contacts < 8)
         num_of_contacts++;
@@ -43,23 +44,29 @@ void    PhoneBook::search_contact()
         std::cout << "Empty Phonebook. Add a contact first." << std::endl;
         return;
     }
+    std::cout << std::endl;
     i = 0;
     while (i < num_of_contacts)
     {
         contacts[i].printContact();
         i++;
     }
+    std::cout << std::endl;
     std::cout << "Enter the index of the entry to display: ";
     std::cin >> i;
+    std::cin.ignore(1000, '\n');
+    std::cout << std::endl;
     if (std::cin.fail())
     {
         std::cin.clear();
-        std::cin.ignore();
+        std::cin.ignore(1000,'\n');
         std::cout << "Invalid input. Not a number." << std::endl;
+        std::cout << std::endl;
         return;
     }
     if (i >= 0 && i < num_of_contacts)
         contacts[i].printContactFull();
     else
         std::cout << "Invalid index number." << std::endl;
+    std::cout << std::endl;
 }

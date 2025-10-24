@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   program.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 00:20:41 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 02:11:53 by mpierant         ###   ########.fr       */
+/*   Created: 2025/10/24 02:05:17 by mpierant          #+#    #+#             */
+/*   Updated: 2025/10/24 02:14:14 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-# define CONTACT_HPP
+#ifndef PROGRAM_HPP
+# define PROGRAM_HPP
 
 #include <string>
-#include "program.hpp"
-
 using std::string;
 
-class   Contact
+typedef struct s_contact
 {
-    private:
-    int index;
     string  first_name;
     string  last_name;
     string  nickname;
     string  phone_number;
     string  darkest_secret;
-
-    public:
-    void    setContact(int index, t_contact ct);
-    void    printContact();
-    void    printContactFull();
-};
+} t_contact;
 
 #endif

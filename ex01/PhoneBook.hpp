@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 02:01:46 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 02:01:55 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 02:13:27 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <string>
 #include "Contact.hpp"
+#include "program.hpp"
 
 using std::string;
 
@@ -27,7 +28,7 @@ class PhoneBook
 
     public:
     PhoneBook();
-    void    add_contact(string first_name, string last_name, string nickname, string phone_number, string darkest_secret);
+    void    add_contact(t_contact ct);
     void    search_contact();
 };
 
