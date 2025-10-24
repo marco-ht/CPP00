@@ -6,11 +6,12 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 00:20:37 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 03:12:15 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/10/24 04:18:47 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include "Contact.hpp"
 #include "program.hpp"
@@ -26,10 +27,22 @@ void    Contact::setContact(int index, t_contact ct)
     this->phone_number = ct.phone_number;
     this->darkest_secret = ct.darkest_secret;
 }
+
 void    Contact::printContact()
 {
-    std::cout << index << "|" << first_name << "|" << last_name << "|" << nickname << std::endl;
-    //to implement the format 10 chars, alligned to right etc.
+    std::cout << std::setw(10) << index << "|";
+    if(first_name.length() > 10)
+        std::cout << first_name.substr(0, 9) << "." << "|";
+    else
+        std::cout << std::setw(10) << first_name << "|";
+    if(last_name.length() > 10)
+        std::cout << last_name.substr(0, 9) << "." << "|";
+    else
+        std::cout << std::setw(10) << last_name << "|";
+    if(nickname.length() > 10)
+        std::cout << nickname.substr(0, 9) << "." << std::endl;
+    else
+        std::cout << std::setw(10) << nickname << std::endl;
 }
 
 void    Contact::printContactFull()
