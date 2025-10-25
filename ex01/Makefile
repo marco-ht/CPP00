@@ -1,5 +1,5 @@
 # Nome del progetto
-NAME    = program
+NAME    = phonebook
 
 # Compiler e flags
 CC      = c++
