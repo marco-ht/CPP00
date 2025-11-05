@@ -3,23 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
+/*   By: mpierant <mpierant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 19:04:59 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/23 19:52:46 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/11/05 16:52:04 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <string>
 
-void    ft_upperstr(char *str)
+void    ft_upperstr(std::string str)
 {
-    int i;
+    size_t i;
 
     i = 0;
-    while (str[i])
+    while (i < str.length())
     {
-        std::cout << static_cast<char>(std::toupper(str[i]));
+        std::cout << static_cast<char>(std::toupper(static_cast<unsigned char>(str[i])));
         i++;
     }
 }
