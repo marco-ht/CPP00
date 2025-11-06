@@ -10,8 +10,8 @@ SRC_DIR = .
 OBJ_DIR = objs
 
 # Lista dei file sorgente e relativi oggetti
-SRC     = $(SRC_DIR)/program.cpp $(SRC_DIR)/Contact.cpp $(SRC_DIR)/PhoneBook.cpp
-OBJ     = $(OBJ_DIR)/program.o $(OBJ_DIR)/Contact.o $(OBJ_DIR)/PhoneBook.o
+SRC     = $(SRC_DIR)/main.cpp $(SRC_DIR)/Contact.cpp $(SRC_DIR)/PhoneBook.cpp
+OBJ     = $(OBJ_DIR)/main.o $(OBJ_DIR)/Contact.o $(OBJ_DIR)/PhoneBook.o
 
 # Comando di rimozione
 RM      = rm -rf
