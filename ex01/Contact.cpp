@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 00:20:37 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 22:27:00 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/11/06 12:42:46 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@
 #include "Contact.hpp"
 #include "program.hpp"
 
-void    Contact::setContact(int index, t_contact ct)
+void    Contact::setContact(t_contact ct)
 {
-    this->index = index;
     this->first_name = ct.first_name;
     this->last_name = ct.last_name;
     this->nickname = ct.nickname;
@@ -28,7 +27,6 @@ void    Contact::setContact(int index, t_contact ct)
 
 void    Contact::printContact()
 {
-    std::cout << std::setw(10) << index << "|";
     if(first_name.length() > 10)
         std::cout << first_name.substr(0, 9) << "." << "|";
     else

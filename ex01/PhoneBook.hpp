@@ -6,7 +6,7 @@
 /*   By: mpierant <marvin@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 02:01:46 by mpierant          #+#    #+#             */
-/*   Updated: 2025/10/24 22:28:41 by mpierant         ###   ########.fr       */
+/*   Updated: 2025/11/06 12:31:06 by mpierant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,13 @@ class PhoneBook
     Contact contacts[8];
     int num_of_contacts;
     int j;
+    t_contact ct;
 
     public:
     PhoneBook();
-    void    add_contact(t_contact ct);
+    void    add_contact();
     void    search_contact();
+    bool    is_numeric();
 };
 
 #endif
